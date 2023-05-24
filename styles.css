@@ -1,0 +1,51 @@
+@font-face {
+    font-family:Foldit;
+    src: url(./fonts/Foldit-VariableFont_wght.ttf);
+}
+
+#toffle {
+    font-family:Foldit;
+    font-weight:800;
+    font-size:3rem;
+}
+
+* {
+    box-sizing:border-box; 
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display:flex;
+    width:1440px;
+    height:1024px;
+}
+
+.main-column {
+    flex:1;
+    background-color:red;
+}
+
+.sidebar-image {
+    width:480px;
+    height:100%;
+}
+#gulls {
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.sidebar-card {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:20px;
+    width:480px; 
+    /* better way to set width? percentage of container not work? */
+    height:80px;
+    position:absolute;
+    top:35%;
+    background-color:hsla(229, 100%, 79%, 0.3);
+}
+
