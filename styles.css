@@ -26,7 +26,6 @@ body {
     height:1024px;
 }
 
-
 #sidebar-image {
     width:480px;
     height:100%;
@@ -55,12 +54,25 @@ body {
     flex-direction:column;
     justify-content:center;
     flex:1;
-    gap:40px;
+    gap:100px;
     background-color: beige;
 }
 
-#main-top, #form {
+#main-top, #form-card > *, #main-bot {
     margin-left:40px;
+}
+
+#form {
+    background:red;
+}
+
+#form-card{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+    padding-top:20px;
+    padding-bottom:20px;
+    background-color:white;
 }
 
 .input-pair {
@@ -73,9 +85,7 @@ input, label {
     display:block;
 }
 
-
-
-/* .form-card {
-    display:flex;
-    flex-direction:column;
-} */
+#button {
+    margin-top:20px;
+    margin-bottom:30px;
+}
