@@ -2,6 +2,7 @@
     box-sizing:border-box; 
     margin: 0;
     padding: 0;
+    font-family:sans-serif;
 }
 
 @font-face {
@@ -16,8 +17,11 @@
 }
 
 h3 {
-    font-family:sans-serif;
     font-size:24px;
+}
+
+a {
+    color: rgb(182, 118, 0);
 }
 
 body {
@@ -45,8 +49,8 @@ body {
     /* better way to set width? percentage of container not work? */
     height:100px;
     position:absolute;
-    top:30%;
-    background-color:hsla(229, 100%, 79%, 0.3);
+    top:25%;
+    background-color:rgba(255, 166, 33, 0.575);
 }
 
 #main-column {
@@ -54,17 +58,18 @@ body {
     flex-direction:column;
     justify-content:center;
     flex:1;
-    gap:100px;
-    background-color: beige;
+    gap:60px;
+    padding-bottom:90px;
+    background-color: rgba(159, 196, 204, 0.527);
 }
 
 #main-top, #form-card > *, #main-bot {
     margin-left:40px;
 }
 
-#form {
-    background:red;
-}
+/* #form {
+    
+} */
 
 #form-card{
     display:flex;
@@ -72,20 +77,59 @@ body {
     gap:20px;
     padding-top:20px;
     padding-bottom:20px;
-    background-color:white;
+    background-color:rgb(245, 245, 245);
+    filter:drop-shadow(0px 4px 4px rgba(0,0,0,0.4));
 }
 
 .input-pair {
     display:flex;
     flex-direction:row;
-    gap:50px;
+    gap:100px;
 }
 
 input, label {
     display:block;
 }
 
+input {
+    width:200px;
+    height:30px;
+    border:2px solid black;
+    border-radius:4px;
+    font-size:14px;
+    padding-left:8px;
+}
+
+input:focus {
+    outline: none !important;
+    border: 2px solid rgb(103, 103, 255);
+    filter:drop-shadow(0px 0px 2px rgba(0,0,0,0.4));
+}
+
+input:invalid {
+    border:2px solid rgb(255, 64, 64);
+}
+
+#email:valid, #password:valid, #confirm:valid {
+    border:2px solid rgb(0, 148, 12);
+}
+
+label {
+    font-size:14px;
+    font-weight:400;
+}
+
+
+
 #button {
-    margin-top:20px;
-    margin-bottom:30px;
+    margin-top:40px;
+    margin-bottom:40px;
+    background-color:rgb(255, 166, 0);
+    color:white;
+    font-weight:bold;
+    font-size:18px;
+    padding:14px 36px;
+    border-radius:4px;
+    border:none;
+    filter:drop-shadow(2px 4px 4px rgba(0,0,0,0.3));
 }
