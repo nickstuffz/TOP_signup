@@ -10,3 +10,12 @@ confirm.addEventListener("input", (e) => {
         confirm.setCustomValidity("Passwords must match.")
     }
 });
+
+password.addEventListener("input", (e) => {
+    if (password.value === confirm.value) {
+        confirm.setCustomValidity("");
+    }
+    else {
+        confirm.setCustomValidity("Passwords must match.")
+    }
+});
